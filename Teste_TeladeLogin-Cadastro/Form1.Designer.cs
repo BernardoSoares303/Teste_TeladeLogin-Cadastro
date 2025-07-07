@@ -35,7 +35,9 @@
             FazerCadastro = new Guna.UI2.WinForms.Guna2Button();
             FazerLogin = new Guna.UI2.WinForms.Guna2Button();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // FazerCadastro
@@ -77,6 +79,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources._6207a59626ab99000460a364;
             pictureBox1.Location = new Point(350, 27);
             pictureBox1.Name = "pictureBox1";
@@ -85,19 +88,34 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImageLayout = ImageLayout.None;
+            pictureBox2.Image = Properties.Resources.pngegg;
+            pictureBox2.Location = new Point(284, 174);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(137, 121);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(210, 159, 253);
             ClientSize = new Size(1031, 549);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(FazerLogin);
             Controls.Add(FazerCadastro);
             Name = "Form1";
             Text = "Tela Inicial";
-            Load += this.Form1_Load;
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -107,5 +125,6 @@
         private Guna.UI2.WinForms.Guna2Button FazerCadastro;
         private Guna.UI2.WinForms.Guna2Button FazerLogin;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

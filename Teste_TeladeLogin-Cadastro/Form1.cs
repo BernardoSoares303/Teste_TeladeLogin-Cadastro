@@ -17,5 +17,10 @@ namespace Teste_TeladeLogin_Cadastro
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
