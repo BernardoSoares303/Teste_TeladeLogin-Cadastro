@@ -15,9 +15,11 @@ namespace Teste_TeladeLogin_Cadastro
     {
         string usuario;
         string senha;
-        public TelaCadastro()
+        private Form f1;
+        public TelaCadastro(Form f1)
         {
             InitializeComponent();
+            this.f1 = f1;
         }
 
         private void TelaCadastro_Load(object sender, EventArgs e)
@@ -57,14 +59,16 @@ namespace Teste_TeladeLogin_Cadastro
             }
             catch (Exception ex)
             {
-               MessageBox.Show($"Erro: {ex.Message}");
+                MessageBox.Show($"Erro: {ex.Message}");
             }
 
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void Cadastrar_Click(object sender, EventArgs e)
         {
             inserirdados(usuario, senha);
+            this.Close();
+            f1.Show();
         }
     }
 }

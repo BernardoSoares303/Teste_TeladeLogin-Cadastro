@@ -15,7 +15,7 @@ namespace Teste_TeladeLogin_Cadastro
 
         private void FazerCadastro_Click(object sender, EventArgs e)
         {
-            TelaCadastro telacadastro = new TelaCadastro();
+            TelaCadastro telacadastro = new TelaCadastro(this);
             this.Hide();
             telacadastro.Show();
         }
