@@ -22,7 +22,9 @@ namespace Teste_TeladeLogin_Cadastro
 
         private void FazerLogin_Click(object sender, EventArgs e)
         {
-
+            TelaLogin telaLogin = new TelaLogin(this);
+            this.Hide();
+            telaLogin.Show();
         }
     }
 }

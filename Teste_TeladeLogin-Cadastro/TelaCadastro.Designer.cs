@@ -54,21 +54,21 @@
             Text_Senha.Font = new Font("Comic Sans MS", 21F, FontStyle.Bold);
             Text_Senha.ForeColor = Color.Black;
             Text_Senha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Text_Senha.Location = new Point(203, 176);
-            Text_Senha.Margin = new Padding(7, 8, 7, 8);
+            Text_Senha.Location = new Point(290, 293);
+            Text_Senha.Margin = new Padding(10, 13, 10, 13);
             Text_Senha.Name = "Text_Senha";
             Text_Senha.PlaceholderForeColor = Color.Black;
             Text_Senha.PlaceholderText = "Senha:";
             Text_Senha.SelectedText = "";
             Text_Senha.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            Text_Senha.Size = new Size(369, 56);
+            Text_Senha.Size = new Size(527, 93);
             Text_Senha.TabIndex = 1;
             Text_Senha.TextOffset = new Point(4, 0);
             Text_Senha.TextChanged += Text_Senha_TextChanged;
             // 
             // Cadastrar
             // 
-            Cadastrar.BorderRadius = 21;
+            Cadastrar.BorderRadius = 45;
             Cadastrar.CustomizableEdges = customizableEdges3;
             Cadastrar.DisabledState.BorderColor = Color.DarkGray;
             Cadastrar.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -77,11 +77,10 @@
             Cadastrar.FillColor = Color.FromArgb(255, 192, 255);
             Cadastrar.Font = new Font("Comic Sans MS", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Cadastrar.ForeColor = Color.Black;
-            Cadastrar.Location = new Point(252, 262);
-            Cadastrar.Margin = new Padding(2);
+            Cadastrar.Location = new Point(360, 437);
             Cadastrar.Name = "Cadastrar";
             Cadastrar.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            Cadastrar.Size = new Size(263, 66);
+            Cadastrar.Size = new Size(376, 110);
             Cadastrar.TabIndex = 2;
             Cadastrar.Text = "Cadastrar";
             Cadastrar.Click += Cadastrar_Click;
@@ -100,29 +99,28 @@
             Text_Usuario.Font = new Font("Comic Sans MS", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Text_Usuario.ForeColor = Color.Black;
             Text_Usuario.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Text_Usuario.Location = new Point(203, 80);
-            Text_Usuario.Margin = new Padding(0, 13, 0, 13);
+            Text_Usuario.Location = new Point(290, 133);
+            Text_Usuario.Margin = new Padding(0, 22, 0, 22);
             Text_Usuario.Name = "Text_Usuario";
             Text_Usuario.PlaceholderForeColor = Color.Black;
             Text_Usuario.PlaceholderText = "Usuario:";
             Text_Usuario.SelectedText = "";
             Text_Usuario.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Text_Usuario.Size = new Size(369, 56);
+            Text_Usuario.Size = new Size(527, 93);
             Text_Usuario.TabIndex = 0;
             Text_Usuario.TextOffset = new Point(4, 0);
             Text_Usuario.TextChanged += Text_Usuario_TextChanged;
             // 
             // TelaCadastro
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(210, 159, 253);
-            ClientSize = new Size(789, 415);
+            ClientSize = new Size(1127, 692);
             Controls.Add(Cadastrar);
             Controls.Add(Text_Senha);
             Controls.Add(Text_Usuario);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2);
             Name = "TelaCadastro";
             Text = "TelaCadastro";
             Load += TelaCadastro_Load;

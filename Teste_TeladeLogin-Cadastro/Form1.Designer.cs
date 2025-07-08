@@ -43,7 +43,7 @@
             // 
             // FazerCadastro
             // 
-            FazerCadastro.BorderRadius = 18;
+            FazerCadastro.BorderRadius = 45;
             FazerCadastro.CustomizableEdges = customizableEdges1;
             FazerCadastro.DisabledState.BorderColor = Color.DarkGray;
             FazerCadastro.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -52,18 +52,17 @@
             FazerCadastro.FillColor = Color.FromArgb(255, 192, 255);
             FazerCadastro.Font = new Font("Comic Sans MS", 15F, FontStyle.Bold);
             FazerCadastro.ForeColor = Color.Black;
-            FazerCadastro.Location = new Point(251, 232);
-            FazerCadastro.Margin = new Padding(2);
+            FazerCadastro.Location = new Point(359, 387);
             FazerCadastro.Name = "FazerCadastro";
             FazerCadastro.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            FazerCadastro.Size = new Size(285, 63);
+            FazerCadastro.Size = new Size(407, 105);
             FazerCadastro.TabIndex = 0;
             FazerCadastro.Text = "Fazer Cadastro";
             FazerCadastro.Click += FazerCadastro_Click;
             // 
             // FazerLogin
             // 
-            FazerLogin.BorderRadius = 18;
+            FazerLogin.BorderRadius = 45;
             FazerLogin.CustomizableEdges = customizableEdges3;
             FazerLogin.DisabledState.BorderColor = Color.DarkGray;
             FazerLogin.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -72,11 +71,10 @@
             FazerLogin.FillColor = Color.FromArgb(255, 192, 255);
             FazerLogin.Font = new Font("Comic Sans MS", 15F, FontStyle.Bold);
             FazerLogin.ForeColor = Color.Black;
-            FazerLogin.Location = new Point(251, 308);
-            FazerLogin.Margin = new Padding(2);
+            FazerLogin.Location = new Point(359, 513);
             FazerLogin.Name = "FazerLogin";
             FazerLogin.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            FazerLogin.Size = new Size(285, 63);
+            FazerLogin.Size = new Size(407, 105);
             FazerLogin.TabIndex = 1;
             FazerLogin.Text = "Fazer Login";
             FazerLogin.Click += FazerLogin_Click;
@@ -85,10 +83,9 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources._6207a59626ab99000460a364;
-            pictureBox1.Location = new Point(309, 23);
-            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Location = new Point(441, 38);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(248, 186);
+            pictureBox1.Size = new Size(354, 310);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -98,26 +95,24 @@
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImageLayout = ImageLayout.None;
             pictureBox2.Image = Properties.Resources.pngegg;
-            pictureBox2.Location = new Point(241, 111);
-            pictureBox2.Margin = new Padding(2);
+            pictureBox2.Location = new Point(344, 185);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 98);
+            pictureBox2.Size = new Size(179, 163);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(210, 159, 253);
-            ClientSize = new Size(789, 415);
+            ClientSize = new Size(1127, 692);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(FazerLogin);
             Controls.Add(FazerCadastro);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2);
             Name = "Form1";
             Text = "Tela Inicial";
             Load += Form1_Load;
