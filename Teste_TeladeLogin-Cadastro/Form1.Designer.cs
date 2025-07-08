@@ -76,6 +76,7 @@
             FazerLogin.Size = new Size(366, 64);
             FazerLogin.TabIndex = 1;
             FazerLogin.Text = "Fazer Login";
+            FazerLogin.Click += FazerLogin_Click;
             // 
             // pictureBox1
             // 
@@ -99,7 +100,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             // 
             // Form1
             // 

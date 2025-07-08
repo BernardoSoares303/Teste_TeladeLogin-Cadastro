@@ -15,10 +15,12 @@ namespace Teste_TeladeLogin_Cadastro
 
         private void FazerCadastro_Click(object sender, EventArgs e)
         {
-
+            TelaCadastro telacadastro = new TelaCadastro();
+            this.Hide();
+            telacadastro.Show();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void FazerLogin_Click(object sender, EventArgs e)
         {
 
         }
