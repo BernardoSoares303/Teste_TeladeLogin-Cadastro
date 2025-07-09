@@ -15,14 +15,15 @@ namespace Teste_TeladeLogin_Cadastro
     {
         static string conexao = "Server=127.0.0.1;Port=3306;Database=appfofo;Uid=root;Pwd='' ;";
 
-        private Form f1;
         string usuario;
         string senha;
+        
+        TelaCep cep = new TelaCep();
 
-        public TelaLogin(Form1 f1)
+        public TelaLogin()
         {
             InitializeComponent();
-            this.f1 = f1;
+
         }
 
         private void TelaLogin_Load(object sender, EventArgs e)
@@ -32,10 +33,11 @@ namespace Teste_TeladeLogin_Cadastro
 
         private void Login_Click(object sender, EventArgs e)
         {
+
             if (ValidarLogin(usuario, senha) == 1)
             {
                 this.Close();
-                f1.Show();
+                cep.Show();
             }
             else
             {
