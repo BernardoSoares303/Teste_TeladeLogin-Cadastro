@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 using MySql.Data.MySqlClient;
 
 namespace Teste_TeladeLogin_Cadastro
@@ -17,6 +18,7 @@ namespace Teste_TeladeLogin_Cadastro
 
         string usuario;
         string senha;
+        string senhacrip;
         
         TelaCep cep = new TelaCep();
 
@@ -34,7 +36,7 @@ namespace Teste_TeladeLogin_Cadastro
         private void Login_Click(object sender, EventArgs e)
         {
 
-            if (ValidarLogin(usuario, senha) == 1)
+            if (ValidarLogin(usuario, senhacrip) == 1)
             {
                 this.Close();
                 cep.Show();
@@ -76,6 +78,34 @@ namespace Teste_TeladeLogin_Cadastro
         private void Login_Senha_TextChanged(object sender, EventArgs e)
         {
             senha = Login_Senha.Text;
+
+            using (MD5 md5 = MD5.Create())
+            {
+                byte[] inputBytes = Encoding.UTF8.GetBytes(senha);
+                byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+                // Converte bytes para string hexadecimal
+                StringBuilder sb = new StringBuilder();
+                foreach (byte b in hashBytes)
+                {
+                    sb.Append(b.ToString("x2"));
+                }
+                senhacrip = sb.ToString();
+            }
+        }
+
+        static public string ComputeHash(string input, HashAlgorithm algorithm)
+        {
+            byte[] inputBytes = Encoding.UTF8.GetBytes(input);
+            byte[] hashBytes = algorithm.ComputeHash(inputBytes);
+
+            // Converte bytes para string hexadecimal
+            StringBuilder sb = new StringBuilder();
+            foreach (byte b in hashBytes)
+            {
+                sb.Append(b.ToString("x2"));
+            }
+            return sb.ToString();
         }
     }
 }
